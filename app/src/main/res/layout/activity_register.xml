@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_register"
+    android:background="@drawable/register_bg"
+    android:orientation="vertical" >
+
+
+    <ImageView
+        android:id="@+id/register_return"
+        android:onClick="onClick"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:src="@mipmap/icon_return"
+        android:layout_alignParentRight="true" />
+    <ImageView
+        android:layout_marginTop="-10dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/login_ui2"
+        android:contentDescription="@null"
+        android:layout_width="70dp"
+        android:layout_height="70dp" />
+
+    <EditText
+        android:singleLine="true"
+        android:id="@+id/user_name"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="#ffffffff"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:drawableLeft="@mipmap/register_icon"
+        android:paddingLeft="8dp"
+        android:drawablePadding="10dp"
+        android:hint="请输入用户名"
+        android:gravity="center_vertical"
+        android:textColorHint="#a3a3a3"
+        android:textColor="#000000"
+        android:textSize="14sp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:background="#191818"/>
+
+    <EditText
+        android:singleLine="true"
+        android:id="@+id/et_pwd"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="#ffffffff"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:drawableLeft="@mipmap/password_icon"
+        android:paddingLeft="8dp"
+        android:inputType="textPassword"
+        android:drawablePadding="10dp"
+        android:hint="请输入密码"
+        android:gravity="center_vertical"
+        android:textColorHint="#a3a3a3"
+        android:textColor="#000000"
+        android:textSize="14sp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:background="#191818"/>
+
+    <EditText
+        android:id="@+id/et_pwd_again"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:background="#ffffffff"
+        android:drawableLeft="@mipmap/password_icon"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:hint="请再次输入密码"
+        android:inputType="textPassword"
+        android:paddingLeft="8dp"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textColorHint="#a3a3a3"
+        android:textSize="14sp" />
+
+    <!--<Button
+        android:id="@+id/btn_register"
+        android:onClick="onClick"
+        android:layout_width="259dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="35dp"
+        android:background="@drawable/button_shape_normal"
+        android:text="@string/btn_register"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />-->
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="262dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:background="@drawable/button_shape_normal"
+        android:onClick="onClick"
+        android:text="注 册"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+</LinearLayout>
+
